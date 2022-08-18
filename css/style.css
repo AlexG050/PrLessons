@@ -57,4 +57,12 @@ img{
     text-align: center;
     font-weight: bold;
 }
+table{
+    border-spacing:0px;
+    width: 100%;
+}
+
+th,td{
+    border: 1px solid black;
+}
 
