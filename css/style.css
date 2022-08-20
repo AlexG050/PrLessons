@@ -60,9 +60,18 @@ img{
 table{
     border-spacing:0px;
     width: 100%;
+
 }
 
 th,td{
     border: 1px solid black;
+}
+.firstColum{
+    width: 200px;
+    text-align: center;
+}
+.zero{
+    background: green;
+    text-align: center;
 }
 
