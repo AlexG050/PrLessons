@@ -1,0 +1,297 @@
+/* Види селекторів */
+
+/* Універсальний селектор */
+* {}
+
+/* Селектор елемент */
+body {
+    color: #3f51b5;
+    color: rgb(63, 81, 191, 0.4);
+    color: rgb(256, green, blue);
+    color: rgb(red, green, blue);
+
+
+    font-size: 14px;
+
+}
+
+div {}
+
+ul {}
+
+img {}
+
+table {}
+
+
+header {
+    color: #454545;
+    border-bottom: 2px solid #000;
+}
+
+header .header_left_block {
+    width: 10%;
+}
+
+header .header_left_block img {
+    width: 100%;
+    height: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    font-size: 16px;
+}
+
+/* Селектор класу */
+.abzat_2 {
+    color: coral;
+    font-size: 18px;
+}
+
+.header_class {}
+
+.faq_block_one .title {}
+
+
+/* Селектор ідентифікатора */
+#abzat_3 {}
+
+#web_header {}
+
+/* Селектор дочірній */
+#web_header .header_left_block img {}
+
+.header_class .header_left_block img {}
+
+header div img {}
+
+div img {}
+
+#web_header div img {}
+
+.header_left_block img {
+    height: 150px;
+    width: 150px;
+}
+
+
+/*Сестринський селектор*/
+.faq_block_one .title.active+ul {
+    color: darkred;
+    font-size: 19px;
+}
+
+.faq_block_one .title.active+ul li {}
+
+.faq_block_one .title.active~ul {}
+
+
+/*Селектор псевдокласу*/
+.faq_block_one .title {
+    color: aqua;
+    font-size: 22px;
+}
+
+.faq_block_one .title:hover {
+    color: darkcyan;
+}
+
+.faq_block_one .title a:hover {
+    color: darkblue;
+}
+
+:focus {}
+
+:active {}
+
+:checked {}
+
+.faq_block_one .title:not(.not_class) {
+    color: forestgreen;
+    font-size: 38px;
+}
+
+
+/*Селектор структурних псевдокласів*/
+.faq_block .faq_block_one:first-child {}
+
+.faq_block .faq_block_one:last-child {}
+
+
+.faq_block .faq_block_one:nth-child(1) {}
+
+.faq_block .faq_block_one:nth-child(2) {}
+
+
+.faq_block .faq_block_one:nth-child(2n) {
+    color: darkgoldenrod;
+    font-size: 56px;
+}
+
+.faq_block .faq_block_one:nth-child(2n+1) {
+    color: gold;
+    font-size: 70px;
+}
+
+#faq_id .faq_block_one {
+    font-size: 35px;
+}
+
+#faq_id .faq_block_one {
+    color: palegreen;
+}
+
+.faq_block .faq_block_one {
+    color: bisque;
+}
+
+
+.faq_block .faq_block_one:nth-child(n+2) {}
+
+.faq_block .faq_block_one:nth-child(n+3) {}
+
+.faq_block .faq_block_one:nth-child(odd) {}
+
+.faq_block .faq_block_one:nth-child(even) {}
+
+
+/*Селектор псевдоелемента*/
+:after {}
+
+:before {}
+
+
+/*групування стилів*/
+.abzat_2,
+#abzat_3,
+.faq_block {
+    font-size: 17px;
+    color: #3f51b5;
+}
+
+.lessons6 .abzat_2 {
+    background-color: #cddc39;
+}
+
+
+
+
+.main_p .our_custom_p {
+    background-color: chartreuse;
+}
+
+.our_custom_p {
+    background-color: #cddc39;
+    font-size: 18px;
+}
+
+.les8 .our_custom_p {
+    background-color: dodgerblue;
+}
+
+.les9 .our {
+    background-color: deeppink;
+}
+
+.lessons8 {}
+
+/* Одиниці виміру */
+.lessons8 .abs_sizes {
+    color: #000;
+}
+
+.lessons8 .abs_sizes .px {
+    font-size: 58px;
+}
+
+.lessons8 .abs_sizes .cm {
+    font-size: 3cm;
+}
+
+.lessons8 .abs_sizes .in {
+    font-size: 4.5in;
+}
+
+.lessons8 .abs_sizes .pt {
+    font-size: 8pt;
+}
+
+.lessons8 .abs_sizes .pc {
+    font-size: 3pc;
+}
+
+
+.lessons8 .rem {
+    /*font-size: 12-14px*/
+    font-size: 5rem;
+}
+
+.lessons8 .precent {
+    font-size: 150%;
+}
+
+.lessons8 .vh {
+    font-size: 10vh;
+    /*1920*1080 100vh=1080 */
+}
+
+.lessons8 .wh {
+    font-size: 10vw;
+    /*1920*1080 100vw=1920 */
+}
+
+.lessons8 .em_block {
+    font-size: 23px;
+}
+
+.lessons8 .em {
+    font-size: 10em;
+}
+
+/* Одиниці виміру */
+
+
+/*шрифт*/
+.lessons8 {
+    color: crimson;
+}
+
+.lessons8 .fonts {
+    color: darkgreen;
+}
+
+.lessons8 .fonts .desc {
+    color: red;
+}
+
+.lessons8 .fonts h3 {
+    font-size: 22px;
+    color: #000;
+}
+
+.lessons8 .fonts h3.first {
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.lessons8 .fonts h3.second {
+    font-family: 'Brush Script MT', cursive;
+    color: #3f51b5;
+}
+
+.lessons8 .fonts h3.third {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.lessons8 .fonts h3.four {
+    font-family: 'Zen Kaku Gothic Antique';
+}
+.lessons8 .fonts h3.five {
+    font-family: 'Zen Kaku Gothic Antique bold';
+}

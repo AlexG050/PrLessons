@@ -120,6 +120,9 @@ nav ul li{
 nav li a{
     color: aliceblue;
 }
+.firstLessonImg{
+    width: 100%;
+}
 footer li{
     margin: 0 1em
 }
@@ -156,5 +159,18 @@ th,td{
 .zero{
     background: green;
     text-align: center;
+}
+.grayBag{
+    background: gray;
+}
+.secondColum:not(th){
+    background: #d2cdcd;
+}
+th{
+    background: #454545;
+    color: #efecec;
+}
+.mtDoc tr:nth-child(2n) .secondColum{
+    background: #ffffff;
 }
 
