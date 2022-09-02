@@ -101,24 +101,21 @@ nav{
 }
 nav img{
     max-height: 100%;
+    float: left;
 }
 nav ul{
-    position: absolute;
-    top: 20%;
-    right: 0;
+   list-style: none;
 }
 
 nav ul li{
-    display: inline;
-    margin-left: 1em;
+
     font-size: 20px;
-    background: #2e3232;
-    color: aliceblue;
-    padding: 10px 25px;
-    border-radius: 15px;
+
+
+
 }
 nav li a{
-    color: aliceblue;
+    color: black;
 }
 .firstLessonImg{
     width: 100%;
@@ -144,7 +141,7 @@ img{
     font-weight: bold;
 }
 table{
-    border-spacing:0px;
+    border-spacing:0;
     width: 100%;
 
 }
@@ -173,4 +170,71 @@ th{
 .mtDoc tr:nth-child(2n) .secondColum{
     background: #ffffff;
 }
+
+
+.circle .elem{
+    background: aqua;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    display: none;
+    transition: 500ms ease-in-out;
+}
+.circle:hover .elem{
+    display: block;
+}
+.circle span{
+    margin-left: 65px;
+    line-height: 55px;
+    width: 0;
+    overflow: hidden;
+    display: block;
+    transition: 500ms ease-in-out;
+}
+.circle .elem:hover span{
+   width: calc(100% + 65px);
+
+}
+
+.circle{
+    width: 115px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: -79px;
+    background: aqua;
+}
+.circle div:nth-child(1){
+    background: url("../images/social.png");
+    background-position: -4px -2px;
+    transform:  rotate(300deg) translate(200px) rotate(calc(-1 * 300deg));
+
+}
+.circle div:nth-child(2){
+    background: url("../images/social.png");
+    background-position: -59px -2px;
+    transform:  rotate(330deg) translate(200px) rotate(calc(-1 * 330deg));
+
+}
+.circle div:nth-child(3){
+    background: url("../images/social.png");
+    background-position: -4px -62px;
+    transform:  rotate(0deg) translate(200px) rotate(calc(-1 * 0deg));
+
+}
+.circle div:nth-child(4){
+    background: url("../images/social.png");
+    background-position: -59px -62px;
+    transform:  rotate(30deg) translate(200px) rotate(calc(-1 * 30deg));
+}
+.circle div:nth-child(5){
+    background: url("../images/social.png");
+    background-position: -116px -62px;
+    transform:  rotate(60deg) translate(200px) rotate(calc(-1 * 60deg));
+}
+
+
+/*nav{*/
+/*    display: none;*/
+/*}*/
 
